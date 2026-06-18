@@ -390,7 +390,7 @@ for training and evaluating more robust spoken dialogue systems.
         <div class="content">
           <h2 class="title is-3">Spoken User Behaviors</h2>
           <p>
-              <img src="/static/images/spoken_user_behavior.png" alt="Spoken User Behavior Taxonomy" class="blend-img-background center-image behavior-taxonomy-img" style="max-width: 70%; height: auto;" loading="lazy">
+              <img src="static/images/spoken_user_behavior.png" alt="Spoken User Behavior Taxonomy" class="blend-img-background center-image behavior-taxonomy-img" style="max-width: 70%; height: auto;" loading="lazy">
             </p>
             <p>
                Unlike clean, text-based exchanges, natural human spoken interactions are characterized by spontaneous and diverse behaviors. To build and evaluate robust spoken dialogue systems, this work defines four key spoken user behaviors. These include <strong>Cross-turn slots</strong>, where complex information is provided incrementally across multiple turns; <strong>Barge-in</strong>, where the user interrupts the system mid-utterance; <strong>Disfluency</strong>, which captures real-time speech imperfections like hesitations and self-repairs; and <strong>Emotion</strong>, reflecting the speaker's emotional state through prosody.   
@@ -408,16 +408,16 @@ for training and evaluating more robust spoken dialogue systems.
         <div class="content">
           <h2 class="title is-3">SpokenTOD</h2>
             <div class="is-hidden-mobile" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin: 1.25rem auto 1.5rem;">
-              <img src="/static/images/SpokenTOD.png" alt="SpokenTOD Dataset Construction Pipeline" class="blend-img-background" style="flex: 0 1 60%; max-width: 60%; min-width: min(100%, 320px); height: auto;" loading="lazy">
+              <img src="static/images/SpokenTOD.png" alt="SpokenTOD Dataset Construction Pipeline" class="blend-img-background" style="flex: 0 1 60%; max-width: 60%; min-width: min(100%, 320px); height: auto;" loading="lazy">
               <div style="display: flex; flex: 0 1 34%; min-width: min(100%, 240px); flex-direction: column; gap: 1rem;">
-                <img src="/static/images/stat_1.png" alt="SpokenTOD statistic 1" class="blend-img-background" style="width: 100%; height: auto;" loading="lazy">
-                <img src="/static/images/stat_2.png" alt="SpokenTOD statistic 2" class="blend-img-background" style="width: 100%; height: auto;" loading="lazy">
+                <img src="static/images/stat_1.png" alt="SpokenTOD statistic 1" class="blend-img-background" style="width: 100%; height: auto;" loading="lazy">
+                <img src="static/images/stat_2.png" alt="SpokenTOD statistic 2" class="blend-img-background" style="width: 100%; height: auto;" loading="lazy">
               </div>
             </div>
             <div class="is-hidden-tablet" style="display: flex; flex-direction: column; gap: 1rem; margin: 1.25rem auto 1.5rem;">
-              <img src="/static/images/SpokenTOD.png" alt="SpokenTOD Dataset Construction Pipeline" class="blend-img-background" style="width: 100%; max-width: 100%; height: auto;" loading="lazy">
-              <img src="/static/images/stat_1.png" alt="SpokenTOD statistic 1" class="blend-img-background" style="width: 100%; max-width: 100%; height: auto;" loading="lazy">
-              <img src="/static/images/stat_2.png" alt="SpokenTOD statistic 2" class="blend-img-background" style="width: 100%; max-width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/SpokenTOD.png" alt="SpokenTOD Dataset Construction Pipeline" class="blend-img-background" style="width: 100%; max-width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/stat_1.png" alt="SpokenTOD statistic 1" class="blend-img-background" style="width: 100%; max-width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/stat_2.png" alt="SpokenTOD statistic 2" class="blend-img-background" style="width: 100%; max-width: 100%; height: auto;" loading="lazy">
             </div>
             <p>
                   <strong>SpokenTOD</strong> is a large-scale spoken task-oriented dialogue (TOD) dataset created by augmenting existing text-based corpora with the four spoken user behaviors. The dataset encompasses 52,390 dialogues and 1,034 hours of synthesized speech. By utilizing a diverse pool of 542 distinct speakers, it effectively simulates a wide range of real-world user voices and accents. Through a systematic and automated augmentation pipeline, cross-turn slots, barge-ins, disfluencies, and emotion labels are naturally injected into the text dialogues before being synthesized into high-quality speech.
@@ -435,7 +435,7 @@ for training and evaluating more robust spoken dialogue systems.
         <div class="content">
           <h2 class="title is-3">SpokenUS</h2>
          <p>
-              <img src="/static/images/SpokenUS.png" alt="SpokenUS Simulator Architecture" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/SpokenUS.png" alt="SpokenUS Simulator Architecture" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
             </p>
             <p>
                   Built upon SpokenTOD, <strong>SpokenUS</strong> is a spoken user simulator grounded in TOD knowledge with a dedicated architecture for handling proactive turn-taking. The simulator operates in three sequential modes: <strong>Listening Mode</strong>, which continuously monitors incoming assistant speech to determine the exact timing for an interruption; <strong>Pre-scripting Mode</strong>, which generates a structured text transcript interleaved with explicit emotion and disfluency tags; and <strong>Speaking Mode</strong>, which autoregressively synthesizes the generated transcript into speech. By disclosing slot values gradually across the dialogue—just as humans do—SpokenUS achieves highly competitive goal coverage and substantially outperforms significantly larger omni models in speech naturalness.
@@ -457,11 +457,11 @@ for training and evaluating more robust spoken dialogue systems.
             Our evaluation demonstrates that SpokenUS achieves highly competitive goal coverage and speech quality. It achieves a Goal Alignment of 0.82 and an average Human MOS of 4.06, outperforming comparable-sized baselines and surpassing significantly larger omni models in speech naturalness. Unlike existing models that front-load information, SpokenUS discloses slot values gradually across multiple turns, mirroring natural human conversations and reducing generation latency. Furthermore, testing downstream dialogue agents reveals that SpokenUS presents a substantially greater challenge. Agents show significant performance drops when facing SpokenUS, confirming that its realistic spoken behaviors provide a rigorous and practical testbed for evaluating robust spoken dialogue systems.
           </p>
           <div style="display: flex; align-items: flex-start; justify-content: center; gap: 1rem; flex-wrap: wrap; margin: 1rem auto 1.25rem;">
-            <img src="/static/images/main_result.png" alt="Main result" style="flex: 1 1 260px; min-width: min(100%, 240px); width: 100%; height: auto;" loading="lazy">
-            <img src="/static/images/cumulative_goal_slots.png" alt="Cumulative goal slots result" style="flex: 1 1 260px; min-width: min(100%, 240px); width: 100%; height: auto;" loading="lazy">
+            <img src="static/images/main_result.png" alt="Main result" style="flex: 1 1 260px; min-width: min(100%, 240px); width: 100%; height: auto;" loading="lazy">
+            <img src="static/images/cumulative_goal_slots.png" alt="Cumulative goal slots result" style="flex: 1 1 260px; min-width: min(100%, 240px); width: 100%; height: auto;" loading="lazy">
             <div style="display: flex; flex: 1 1 260px; min-width: min(100%, 240px); flex-direction: column; gap: 1rem;">
-              <img src="/static/images/final_turn_slot_f1.png" alt="Final turn slot F1 result" style="width: 100%; height: auto;" loading="lazy">
-              <img src="/static/images/alternative_assistant.png" alt="Alternative assistant result" style="width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/final_turn_slot_f1.png" alt="Final turn slot F1 result" style="width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/alternative_assistant.png" alt="Alternative assistant result" style="width: 100%; height: auto;" loading="lazy">
             </div>
           </div>
         </div>
