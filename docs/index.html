@@ -75,7 +75,7 @@
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=20260629">
   
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -354,7 +354,7 @@
 <!-- End teaser preview -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -384,7 +384,7 @@ for training and evaluating more robust spoken dialogue systems.
 </section>
 <!-- End paper abstract -->
 
-<section class="section hero is-small">
+<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -402,7 +402,7 @@ for training and evaluating more robust spoken dialogue systems.
   </div>
 </section>
 
-<section class="section hero is-small is-light">
+<section class="section is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -429,7 +429,7 @@ for training and evaluating more robust spoken dialogue systems.
   </div>
 </section>
 
-<section class="section hero is-small">
+<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -447,7 +447,7 @@ for training and evaluating more robust spoken dialogue systems.
   </div>
 </section>
 
-<section class="section hero is-small is-light">
+<section class="section is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -471,18 +471,33 @@ for training and evaluating more robust spoken dialogue systems.
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Poster</h2>
+          <object type="application/pdf" data="static/pdfs/SpokenUS_Poster.pdf" width="100%" height="600px" loading="lazy">
+            Browser does not support PDFs. Please download the PDF to view it: <a href="static/pdfs/SpokenUS_Poster.pdf" target="_blank">Download PDF</a>.
+          </object>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{lee2026spokenus,
+<section class="section is-light" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <div class="bibtex-header">
+      <h2 class="title">BibTeX</h2>
+      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <i class="fas fa-copy"></i>
+        <span class="copy-text">Copy</span>
+      </button>
+    </div>
+    <pre id="bibtex-code"><code>@article{lee2026spokenus,
   title={{SpokenUS}: A Spoken User Simulator for Task-Oriented Dialogue},
   author={Lee, Jonggeun and Pyo, Junseong and Park, Jeongmin and Jo, Yohan},
   journal={arXiv preprint arXiv:2603.16783},
@@ -493,7 +508,7 @@ for training and evaluating more robust spoken dialogue systems.
   archivePrefix={arXiv},
   primaryClass={cs.CL}
 }</code></pre>
-    </div>
+  </div>
 </section>
 <!--End BibTex citation -->
 

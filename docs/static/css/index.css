@@ -93,7 +93,8 @@ body {
   overflow: hidden;
 }
 
-.hero.is-light {
+.hero.is-light,
+.section.is-light {
   background: var(--background-secondary);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
