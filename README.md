@@ -16,21 +16,6 @@ SpokenUS takes the user’s goal and profile, the conversational history as inte
 ![SpokenUS Archiecture](docs/static/images/SpokenUS.png)
 
 
-
-## Audio Samples
-
-The sample below presents the assistant greeting and turns 0–5 from the SpokenUS dialogue [`spokenwoz_MUL1830`](assets/audio_samples/spokenwoz_MUL1830/), including the speaker role, emotion, behavior, transcript, and a playable waveform video for each turn.
-
-| Turn | Role | Emotion | Behavior | Transcript | Audio |
-|---:|---|---|---|---|---|
-| Greeting | **Assistant** | — | — | Hello! How can I assist you today? | <video src="https://github.com/user-attachments/assets/8a81243a-32ce-477a-8d60-741453997836" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/assistant_greeting.wav) |
-| 0 | **User** | Neutral | — | Can you help me find a hotel named home from home? | <video src="https://github.com/user-attachments/assets/1a679fcc-c941-4b85-80e9-7b0301a38287" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/turn_0.wav) |
-| 1 | **Assistant** | — | — | I found a hotel named Home from Home located at seventy-eight to eighty Milton Road in the north area. It has internet, parking, and a moderate price range with double rooms at seventy-five pounds. Would you like the phone number or more details? | <video src="https://github.com/user-attachments/assets/7f489c71-4394-4034-b4c0-517596215f30" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/turn_1.wav) |
-| 2 | **User** | Neutral | Disfluency: Correction | I want to— let me just... Does that hotel have free internet? | <video src="https://github.com/user-attachments/assets/cfb586b6-47bf-434e-a10f-114af62b0032" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/turn_2.wav) |
-| 3 | **Assistant** | — | — | Yes, the Home from Home hotel does have free internet available. | <video src="https://github.com/user-attachments/assets/8a3054db-07df-41fc-b850-730998d3f896" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/turn_3.wav) |
-| 4 | **User** | Satisfied | — | Okay, that's good. I want to make a booking there for six people, for three nights starting tuesday. | <video src="https://github.com/user-attachments/assets/722548f2-66d3-4543-9263-9a1dbab40754" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/turn_4.wav) |
-| 5 | **Assistant** | — | — | I can help you book six people at Home from Home for three nights starting Tuesday. Would you like to confirm the booking or need any special requests? | <video src="https://github.com/user-attachments/assets/237c8a7c-dbab-4694-8236-4652175bd75a" controls width="320"></video><br>[WAV](assets/audio_samples/spokenwoz_MUL1830/audios/turn_5.wav) |
-
 ## Citation
 
 ```bibtex
