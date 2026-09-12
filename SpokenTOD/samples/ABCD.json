@@ -1,0 +1,662 @@
+{
+  "dialogue_id": "abcd_10130",
+  "source": "abcd",
+  "goal": {
+    "text": "Your goal is to recover your forgotten password. Start by stating that you have forgotten your password. When prompted, provide your username or email address. To wrap up, follow the agent's instructions to reset it. Your name is alessandro phoenix, your username is alessandrophoenix406, your phone number is (291) 447-6406, you are a bronze member, and your security answer is singh. For this request, address is 6473 brushwick dr, and in san lima, ny 85164.",
+    "structured": {
+      "domains": [
+        "customer_service"
+      ],
+      "intents": [
+        {
+          "domain": "customer_service",
+          "intent": "account_access.recover_password",
+          "slots": {
+            "customer_name": "alessandro phoenix",
+            "member_level": "bronze",
+            "phone": "(291) 447-6406",
+            "security_answer": "singh",
+            "username": "alessandrophoenix406",
+            "order_street_address": "6473 brushwick dr",
+            "order_full_address": "6473 brushwick dr  san lima, ny 85164",
+            "order_city": "san lima",
+            "order_state": "ny",
+            "order_zip_code": "85164"
+          },
+          "requests": []
+        }
+      ],
+      "metadata": {
+        "personal": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406"
+        },
+        "order": {
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        },
+        "product": {
+          "names": [],
+          "amounts": []
+        }
+      }
+    }
+  },
+  "turns": [
+    {
+      "role": "assistant",
+      "text": "Hi! How can I help you today?",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_0.wav"
+    },
+    {
+      "role": "user",
+      "text": "I'm trying to login to my account right, but I can seem to remember my password",
+      "emotion": {
+        "label": 1,
+        "name": "fearful"
+      },
+      "disfluency": [
+        {
+          "type": "DM",
+          "position": 34,
+          "tag": "[DM]",
+          "text": "right, "
+        }
+      ],
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "I'm trying to login to my account right, but I can seem to remember my password",
+      "text_normalized": "I'm trying to login to my account right, but I can seem to remember my password",
+      "audio_path": "data/audios/test/abcd_10130/turn_1.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I see. What is your username or account ID? Full name* Apologies",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_2.wav"
+    },
+    {
+      "role": "user",
+      "text": "Alessandro Phoenix",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "Alessandro Phoenix",
+      "text_normalized": "Alessandro Phoenix",
+      "audio_path": "data/audios/test/abcd_10130/turn_3.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Now I also need your username. My apologies.",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_4.wav"
+    },
+    {
+      "role": "user",
+      "text": "alessandrophoenix four hundred six",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "alessandrophoenix406",
+      "text_normalized": "alessandrophoenix four hundred six",
+      "audio_path": "data/audios/test/abcd_10130/turn_5.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I can not recover your wold password but I can generate a new one. What is your PIN? I can also find out by your email address.",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_6.wav"
+    },
+    {
+      "role": "user",
+      "text": "I don't have my pin",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "I don't have my pin",
+      "text_normalized": "I don't have my pin",
+      "audio_path": "data/audios/test/abcd_10130/turn_7.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Do you have your email address?",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_8.wav"
+    },
+    {
+      "role": "user",
+      "text": "can't remeber the email I used",
+      "emotion": {
+        "label": 3,
+        "name": "apologetic"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "can't remeber the email I used",
+      "text_normalized": "can't remeber the email I used",
+      "audio_path": "data/audios/test/abcd_10130/turn_9.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I can go by the security question",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_10.wav"
+    },
+    {
+      "role": "user",
+      "text": "Singh",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "Singh",
+      "text_normalized": "Singh",
+      "audio_path": "data/audios/test/abcd_10130/turn_11.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "That is the maiden name, correct?",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_12.wav"
+    },
+    {
+      "role": "user",
+      "text": "yea",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "yea",
+      "text_normalized": "yea",
+      "audio_path": "data/audios/test/abcd_10130/turn_13.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I also sent a reset code to the email on file<bargein>",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "bargein": {
+        "type": "CLARIFICATION",
+        "subtype": "FAIL_INTERP"
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_14.wav"
+    },
+    {
+      "role": "user",
+      "text": "Which email is that?",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "bargein": {
+        "type": "CLARIFICATION",
+        "subtype": "FAIL_INTERP"
+      },
+      "text_original": "Which email is that?",
+      "text_normalized": "Which email is that?",
+      "audio_path": "data/audios/test/abcd_10130/turn_15.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "The email associated with your account is the one I used to send the reset code. Would you like me to display it for you?",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "bargein": {
+        "type": "CLARIFICATION",
+        "subtype": "FAIL_INTERP"
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_16.wav"
+    },
+    {
+      "role": "user",
+      "text": "Would have to check each of my emails to know which",
+      "tagged": "Would have to check each of my emails to know which",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [],
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "Would have to check each of my emails to know which",
+      "text_normalized": "Would have to check each of my emails to know which",
+      "audio_path": "data/audios/test/abcd_10130/turn_17.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Your new password is bf5qnrv4q7n Is there anything else I can do for you today?",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_18.wav"
+    },
+    {
+      "role": "user",
+      "text": "Thanks let me see, That's all",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      },
+      "disfluency": [
+        {
+          "type": "EDIT",
+          "position": 7,
+          "tag": "[EDIT]",
+          "text": "let me see, "
+        }
+      ],
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "text_original": "Thanks let me see, That's all",
+      "text_normalized": "Thanks let me see, That's all",
+      "audio_path": "data/audios/test/abcd_10130/turn_19.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Great. Have a goo<bargein>",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "bargein": {
+        "type": "EFFICIENCY",
+        "subtype": "REF_RAW"
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_20.wav"
+    },
+    {
+      "role": "user",
+      "text": "That's all",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "bargein": {
+        "type": "EFFICIENCY",
+        "subtype": "REF_RAW"
+      },
+      "text_original": "That's all",
+      "text_normalized": "That's all",
+      "audio_path": "data/audios/test/abcd_10130/turn_21.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Alright, feel free to reach out if you need anything else. Have a great day!",
+      "state": {
+        "customer_service": {
+          "customer_name": "alessandro phoenix",
+          "member_level": "bronze",
+          "phone": "(291) 447-6406",
+          "security_answer": "singh",
+          "username": "alessandrophoenix406",
+          "street_address": "6473 brushwick dr",
+          "full_address": "6473 brushwick dr  san lima, ny 85164",
+          "city": "san lima",
+          "state": "ny",
+          "zip_code": "85164"
+        }
+      },
+      "bargein": {
+        "type": "EFFICIENCY",
+        "subtype": "REF_RAW"
+      },
+      "audio_path": "data/audios/test/abcd_10130/turn_22.wav"
+    },
+    {
+      "role": "user",
+      "text": "<|endoftext|>",
+      "text_original": "<|endoftext|>",
+      "text_normalized": "<|endoftext|>"
+    }
+  ],
+  "state": {
+    "customer_service": {
+      "customer_name": "alessandro phoenix",
+      "member_level": "bronze",
+      "phone": "(291) 447-6406",
+      "security_answer": "singh",
+      "username": "alessandrophoenix406",
+      "street_address": "6473 brushwick dr",
+      "full_address": "6473 brushwick dr  san lima, ny 85164",
+      "city": "san lima",
+      "state": "ny",
+      "zip_code": "85164"
+    }
+  },
+  "speaker": {
+    "filename": "yiddish3.mp3",
+    "category": "Native",
+    "sex": "male",
+    "age": 52,
+    "country": "usa",
+    "native_language": "yiddish",
+    "cohort": "40-50",
+    "target_demographic": {
+      "category": "Native",
+      "cohort": "40-50"
+    }
+  },
+  "assistant_speaker": {
+    "filename": "english11.mp3",
+    "sex": "female",
+    "country": "uk",
+    "category": "Native",
+    "cohort": "20-30"
+  },
+  "metadata": {
+    "scenario": {
+      "personal": {
+        "customer_name": "alessandro phoenix",
+        "member_level": "bronze",
+        "phone": "(291) 447-6406",
+        "security_answer": "singh",
+        "username": "alessandrophoenix406"
+      },
+      "order": {
+        "street_address": "6473 brushwick dr",
+        "full_address": "6473 brushwick dr  san lima, ny 85164",
+        "city": "san lima",
+        "state": "ny",
+        "zip_code": "85164"
+      },
+      "product": {
+        "names": [],
+        "amounts": []
+      },
+      "flow": "account_access",
+      "subflow": "recover_password"
+    }
+  }
+}

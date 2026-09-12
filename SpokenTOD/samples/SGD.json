@@ -1,0 +1,344 @@
+{
+  "dialogue_id": "sgd_10_00017",
+  "source": "sgd",
+  "goal": {
+    "text": "Your objective is to start by play movie for a media with subtitle language as dontcare. After that, provide title as The Load. Once you've done that, provide subtitle language as French. Make sure to ask for the genre, starring.",
+    "structured": {
+      "domains": [
+        "Media"
+      ],
+      "intents": [
+        {
+          "domain": "Media",
+          "intent": "PlayMovie",
+          "slots": {
+            "subtitle_language": "French",
+            "title": "The Load"
+          },
+          "requests": [
+            "genre",
+            "starring"
+          ],
+          "slot_values": {
+            "subtitle_language": [
+              "French"
+            ],
+            "title": [
+              "The Load"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "turns": [
+    {
+      "role": "user",
+      "text": "I want to see the movie right now. It can have subtitles or not.",
+      "emotion": {
+        "label": 5,
+        "name": "excited"
+      },
+      "state": {
+        "Media_3": {
+          "subtitle_language": "dontcare"
+        }
+      },
+      "text_original": "I want to see the movie right now. It can have subtitles or not.",
+      "text_normalized": "I want to see the movie right now. It can have subtitles or not.",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_0.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Which movie are you interested in seeing?",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "dontcare"
+        }
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_1.wav"
+    },
+    {
+      "role": "user",
+      "text": "I want to see The Load.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "Media_3": {
+          "subtitle_language": "dontcare",
+          "title": "The Load"
+        }
+      },
+      "text_original": "I want to see The Load.",
+      "text_normalized": "I want to see The Load.",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_2.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "You would like to see The Load with English subtitles?",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "dontcare",
+          "title": "The Load"
+        }
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_3.wav"
+    },
+    {
+      "role": "user",
+      "text": "I prefer to see it with French subtitles.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "text_original": "I prefer to see it with French subtitles.",
+      "text_normalized": "I prefer to see it with French subtitles.",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_4.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "You would like to see The Load with French subtitles?",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_5.wav"
+    },
+    {
+      "role": "user",
+      "text": "Yes, that would be fine.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "text_original": "Yes, that would be fine.",
+      "text_normalized": "Yes, that would be fine.",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_6.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "The movie has ended<bargein>",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load",
+          "status": "ended"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_7.wav"
+    },
+    {
+      "role": "user",
+      "text": "What?",
+      "emotion": {
+        "label": 2,
+        "name": "dissatisfied"
+      },
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "text_original": "What?",
+      "text_normalized": "What?",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_8.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I apologize. What would you like me to correct?",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_9.wav"
+    },
+    {
+      "role": "user",
+      "text": "I want to— let me just say the movie has just started.",
+      "tagged": "I want to— [RST] let me just say the movie has just started.",
+      "emotion": {
+        "label": 2,
+        "name": "dissatisfied"
+      },
+      "disfluency": [
+        {
+          "type": "RST",
+          "restart_near": 1,
+          "original_utterance": "I said the movie has just started.",
+          "modified_utterance": "I want to— let me just say the movie has just started."
+        }
+      ],
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "text_original": "I want to— let me just say the movie has just started.",
+      "text_normalized": "I want to— let me just say the movie has just started.",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_10.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Thank you for the correction. The movie has started.",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load",
+          "status": "started"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_11.wav"
+    },
+    {
+      "role": "user",
+      "text": "What type of movie is it and who is the main huh, actor?",
+      "tagged": "What type of movie is it and who is the main [FP] huh, actor?",
+      "emotion": {
+        "label": 5,
+        "name": "excited"
+      },
+      "disfluency": [
+        {
+          "type": "FP",
+          "text": "huh, ",
+          "position": 45,
+          "filler_category": "filled_pause"
+        }
+      ],
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "text_original": "What type of movie is it and who is the main huh, actor?",
+      "text_normalized": "What type of movie is it and who is the main huh, actor?",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_12.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "It is a War movie and Marko Grba Singh is the main actor.",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_13.wav"
+    },
+    {
+      "role": "user",
+      "text": "Thanks. huh, That would be all.",
+      "tagged": "Thanks. [FP] huh, That would be all.",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      },
+      "disfluency": [
+        {
+          "type": "FP",
+          "text": "huh, ",
+          "position": 8,
+          "filler_category": "filled_pause"
+        }
+      ],
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "text_original": "Thanks. huh, That would be all.",
+      "text_normalized": "Thanks. huh, That would be all.",
+      "audio_path": "data/audios/test/sgd_10_00017/turn_14.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Enjoy your day.",
+      "state": {
+        "Media_3": {
+          "subtitle_language": "French",
+          "title": "The Load"
+        }
+      },
+      "audio_path": "data/audios/test/sgd_10_00017/turn_15.wav"
+    },
+    {
+      "role": "user",
+      "text": "<|endoftext|>",
+      "text_original": "<|endoftext|>",
+      "text_normalized": "<|endoftext|>"
+    }
+  ],
+  "state": {
+    "Media_3": {
+      "subtitle_language": "French",
+      "title": "The Load"
+    }
+  },
+  "speaker": {
+    "filename": "japanese18.mp3",
+    "category": "Asian",
+    "sex": "female",
+    "age": 52,
+    "country": "japan",
+    "native_language": "japanese",
+    "cohort": "40-50",
+    "target_demographic": {
+      "category": "Asian",
+      "cohort": "60+"
+    }
+  },
+  "assistant_speaker": {
+    "filename": "english10.mp3",
+    "sex": "female",
+    "country": "usa",
+    "category": "Native",
+    "cohort": "20-30"
+  },
+  "metadata": {
+    "services": [
+      "Media_3"
+    ]
+  }
+}

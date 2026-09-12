@@ -1,0 +1,475 @@
+{
+  "dialogue_id": "tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d",
+  "source": "tm2",
+  "goal": {
+    "text": "You want to find a restaurant. Start by looking for a restaurant serving seafood in La Jolla, California. Then, mention near the beach. Then, mention within something around $20-$30. Then, mention I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that, serving Red Lobster, Chili's, and Applebee's. Then, mention for desserts. Finally, mention Fishery.",
+    "structured": {
+      "domains": [
+        "restaurants"
+      ],
+      "intents": [
+        {
+          "domain": "restaurants",
+          "intent": "restaurant",
+          "slots": {
+            "restaurant.type.food": "Red Lobster",
+            "restaurant.location": "La Jolla, California",
+            "restaurant.sub-location": "near the beach",
+            "restaurant.price_range": "something around $20-$30",
+            "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+            "restaurant.menu_item": "Applebee's",
+            "restaurant.type.meal": "desserts",
+            "restaurant.name.restaurant": "Fishery"
+          },
+          "slot_values": {
+            "restaurant.type.food": [
+              "seafood",
+              "Red Lobster"
+            ],
+            "restaurant.location": [
+              "La Jolla, California"
+            ],
+            "restaurant.sub-location": [
+              "near the beach"
+            ],
+            "restaurant.price_range": [
+              "something around $20-$30"
+            ],
+            "restaurant.other_description": [
+              "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that"
+            ],
+            "restaurant.menu_item": [
+              "Chili's",
+              "Applebee's"
+            ],
+            "restaurant.type.meal": [
+              "desserts"
+            ],
+            "restaurant.name.restaurant": [
+              "Fishery"
+            ]
+          },
+          "slot_sequence": [
+            {
+              "slot": "restaurant.type.food",
+              "value": "seafood"
+            },
+            {
+              "slot": "restaurant.location",
+              "value": "La Jolla, California"
+            },
+            {
+              "slot": "restaurant.sub-location",
+              "value": "near the beach"
+            },
+            {
+              "slot": "restaurant.price_range",
+              "value": "something around $20-$30"
+            },
+            {
+              "slot": "restaurant.other_description",
+              "value": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that"
+            },
+            {
+              "slot": "restaurant.type.food",
+              "value": "Red Lobster"
+            },
+            {
+              "slot": "restaurant.menu_item",
+              "value": "Chili's"
+            },
+            {
+              "slot": "restaurant.menu_item",
+              "value": "Applebee's"
+            },
+            {
+              "slot": "restaurant.type.meal",
+              "value": "desserts"
+            },
+            {
+              "slot": "restaurant.name.restaurant",
+              "value": "Fishery"
+            }
+          ],
+          "requests": []
+        }
+      ]
+    }
+  },
+  "turns": [
+    {
+      "role": "user",
+      "text": "Hi there. I am looking for a seafood restaurant in La Jolla, California. I was hoping you could help me out.",
+      "emotion": {
+        "label": 5,
+        "name": "excited"
+      },
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California"
+        }
+      },
+      "text_original": "Hi there. I am looking for a seafood restaurant in La Jolla, California. I was hoping you could help me out.",
+      "text_normalized": "Hi there. I am looking for a seafood restaurant in La Jolla, California. I was hoping you could help me out.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_0.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Of course! I'll find a seafood restaurant in San Diego<bargein>",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California"
+        },
+        "restaurant": {
+          "location": "San Diego"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_1.wav"
+    },
+    {
+      "role": "user",
+      "text": "No, that's wrong.",
+      "emotion": {
+        "label": 4,
+        "name": "abusive"
+      },
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "text_original": "No, that's wrong.",
+      "text_normalized": "No, that's wrong.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_2.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I apologize. What would you like me to correct?",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_3.wav"
+    },
+    {
+      "role": "user",
+      "text": "I said La Jolla, oops, not San Diego.",
+      "tagged": "I said La Jolla, [FP] oops, not San Diego.",
+      "emotion": {
+        "label": 4,
+        "name": "abusive"
+      },
+      "disfluency": [
+        {
+          "type": "FP",
+          "text": "oops, ",
+          "position": 17,
+          "filler_category": "filled_pause"
+        }
+      ],
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "text_original": "I said La Jolla, oops, not San Diego.",
+      "text_normalized": "I said La Jolla, oops, not San Diego.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_4.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Thank you for the clarification. I'll find a seafood restaurant in La Jolla, California for you.",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California"
+        },
+        "restaurant": {
+          "location": "La Jolla, California"
+        }
+      },
+      "bargein": {
+        "type": "ERROR_RECOVERY",
+        "subtype": "INCOHERENT_RAW"
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_5.wav"
+    },
+    {
+      "role": "user",
+      "text": "Yeah. I would like it to be preferably near the beach.",
+      "emotion": {
+        "label": 5,
+        "name": "excited"
+      },
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach"
+        }
+      },
+      "text_original": "Yeah. I would like it to be preferably near the beach.",
+      "text_normalized": "Yeah. I would like it to be preferably near the beach.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_6.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Okay that is definitely possible. What else?",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach"
+        }
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_7.wav"
+    },
+    {
+      "role": "user",
+      "text": "I would also like to make sure that they are currently running some specials for like a family order, you listen, know, something around $20-$30.",
+      "tagged": "I would also like to make sure that they are currently running some specials for like a family order, you [DM] listen, know, something around dollar twenty-dollar thirty.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [
+        {
+          "type": "DM",
+          "text": "listen, ",
+          "position": 106,
+          "filler_category": "discourse_marker"
+        }
+      ],
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30"
+        }
+      },
+      "text_original": "I would also like to make sure that they are currently running some specials for like a family order, you listen, know, something around $20-$30.",
+      "text_normalized": "I would also like to make sure that they are currently running some specials for like a family order, you listen, know, something around dollar twenty-dollar thirty.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_8.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Sure thing and what else?",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "seafood",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30"
+        }
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_9.wav"
+    },
+    {
+      "role": "user",
+      "text": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's— wait, I mean Olive Garden or maybe Red Lobster, something like that.",
+      "tagged": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's— [COR] wait, I mean Olive Garden or maybe Red Lobster, something like that.",
+      "emotion": {
+        "label": 5,
+        "name": "excited"
+      },
+      "disfluency": [
+        {
+          "type": "COR",
+          "slot_name": "restaurant.menu_item",
+          "correct_value": "Applebee's",
+          "original_utterance": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that.",
+          "modified_utterance": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's— wait, I mean Olive Garden or maybe Red Lobster, something like that.",
+          "position": 120
+        }
+      ],
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's"
+        }
+      },
+      "text_original": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's— wait, I mean Olive Garden or maybe Red Lobster, something like that.",
+      "text_normalized": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's— wait, I mean Olive Garden or maybe Red Lobster, something like that.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_10.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Okay. Anything else?",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's"
+        }
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_11.wav"
+    },
+    {
+      "role": "user",
+      "text": "Well, I hope that they have got desserts there, that is about it.",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      },
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's",
+          "restaurant.type.meal": "desserts"
+        }
+      },
+      "text_original": "Well, I hope that they have got desserts there, that is about it.",
+      "text_normalized": "Well, I hope that they have got desserts there, that is about it.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_12.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Alright. I found 2 seafood restaurants. The first is called Crab Catcher. It has 3.9 star customer reviews. Polished mainstay for market-fresh seafood, bustling happy hours & a romantic patio on the cliffs. The second is called the Fishery. It has 4.4 star customer reviews. Market-fresh sushi & entrees, plus a seafood market inside a midcentury, brick-&-mortar warehouse.",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's",
+          "restaurant.type.meal": "desserts"
+        }
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_13.wav"
+    },
+    {
+      "role": "user",
+      "text": "Oh man, The Fishery sounds perfect. Thank you so much.",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      },
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's",
+          "restaurant.type.meal": "desserts",
+          "restaurant.name.restaurant": "Fishery"
+        }
+      },
+      "text_original": "Oh man, The Fishery sounds perfect. Thank you so much.",
+      "text_normalized": "Oh man, The Fishery sounds perfect. Thank you so much.",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_14.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Okay. The Fishery, enjoy your meal, Good bye.",
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's",
+          "restaurant.type.meal": "desserts",
+          "restaurant.name.restaurant": "Fishery"
+        }
+      },
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_15.wav"
+    },
+    {
+      "role": "user",
+      "text": "Thank you very much. Bye.<|endoftext|>",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      },
+      "state": {
+        "restaurants": {
+          "restaurant.type.food": "Red Lobster",
+          "restaurant.location": "La Jolla, California",
+          "restaurant.sub-location": "near the beach",
+          "restaurant.price_range": "something around $20-$30",
+          "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+          "restaurant.menu_item": "Applebee's",
+          "restaurant.type.meal": "desserts",
+          "restaurant.name.restaurant": "Fishery"
+        }
+      },
+      "text_original": "Thank you very much. Bye.<|endoftext|>",
+      "text_normalized": "Thank you very much. Bye.<|endoftext|>",
+      "audio_path": "data/audios/test/tm2_dlg-e844331a-3a6f-4b2e-a632-63019bb1e14d/turn_16.wav"
+    }
+  ],
+  "state": {
+    "restaurants": {
+      "restaurant.type.food": "Red Lobster",
+      "restaurant.location": "La Jolla, California",
+      "restaurant.sub-location": "near the beach",
+      "restaurant.price_range": "something around $20-$30",
+      "restaurant.other_description": "I definitely like it to be a sit-down style, not fast food. Something along the lines of maybe like Chili's or Applebee's or maybe Red Lobster, something like that",
+      "restaurant.menu_item": "Applebee's",
+      "restaurant.type.meal": "desserts",
+      "restaurant.name.restaurant": "Fishery"
+    }
+  },
+  "speaker": {
+    "filename": "english549.mp3",
+    "category": "Native",
+    "sex": "female",
+    "age": 19,
+    "country": "uk",
+    "native_language": "english",
+    "cohort": "10",
+    "target_demographic": {
+      "category": "Native",
+      "cohort": "10"
+    }
+  },
+  "assistant_speaker": {
+    "filename": "english13.mp3",
+    "sex": "male",
+    "country": "uk",
+    "category": "Native",
+    "cohort": "60+"
+  },
+  "metadata": {
+    "domain": "restaurants",
+    "instruction_id": "restaurant-11"
+  }
+}

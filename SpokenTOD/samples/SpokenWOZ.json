@@ -1,0 +1,2120 @@
+{
+  "dialogue_id": "spokenwoz_SNG0460",
+  "source": "spokenwoz",
+  "goal": {
+    "text": "For this request, your name is joyce tenda. Your goal is to find a italian restaurant in the centre in the cheap price range. Book a table for 5 people at 17:45 on friday under the name joyce tenda.",
+    "structured": {
+      "domains": [
+        "restaurant"
+      ],
+      "intents": [
+        {
+          "domain": "restaurant",
+          "intent": "find_and_book",
+          "slots": {
+            "area": "centre",
+            "food": "italian",
+            "pricerange": "cheap",
+            "book_day": "friday",
+            "book_people": "5",
+            "book_time": "17:45"
+          },
+          "requests": []
+        }
+      ],
+      "metadata": {
+        "profile": {
+          "info": {
+            "name": "joyce tenda"
+          }
+        }
+      }
+    }
+  },
+  "turns": [
+    {
+      "role": "user",
+      "text": "hello is that customer service center.",
+      "state": {},
+      "text_original": "hello is that customer service center .",
+      "text_normalized": "hello is that customer service center.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "yes , this is customer service . sister , what can i do for you .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "",
+          "name": "",
+          "pricerange": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "oh, yes, i'm looking for a restaurant now. do you have any recommend.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "",
+          "name": "",
+          "pricerange": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "oh , yes , i'm looking for a restaurant now . do you have any recommend .",
+      "text_normalized": "oh, yes, i'm looking for a restaurant now. do you have any recommend.",
+      "emotion": {
+        "label": 5,
+        "name": "excited"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "yes , of course . and do you have any special requirement for the price range .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "",
+          "name": "",
+          "pricerange": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "i think the restaurant should be in the cheap price range.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "",
+          "name": "",
+          "pricerange": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "i think the restaurant should be in the cheap price range .",
+      "text_normalized": "i think the restaurant should be in the cheap price range.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay . do you have any food preference .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "i'd like to eat italian food.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "i'd like to eat italian food .",
+      "text_normalized": "i'd like to eat italian food.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "of course . and do you have any special requirement for the area .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "italian",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "uh, i think center is.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "",
+          "food": "italian",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "uh , i think center is .",
+      "text_normalized": "uh, i think center is.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay , please hold on . let me check for you .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "okay, thank you.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "okay , thank you .",
+      "text_normalized": "okay, thank you.",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "yes , i have found a restaurant called pizza hut city centre . would you like to go there to buy .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "oh, yes. uh, then please book a table for.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "oh , yes . uh , then please book a table for .",
+      "text_normalized": "oh, yes. uh, then please book a table for.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay , of course , and for how many people .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "um let me think we have five people.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "um let me think we have five people .",
+      "text_normalized": "um let me think we have five people.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay . and which day would you like to come .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "5",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "we will arrive there maybe on on friday.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "5",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "we will arrive there maybe on on friday .",
+      "text_normalized": "we will arrive there maybe on on friday.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay . and what time will you come in .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "uh, let me think we will have a party. at an afternoon and i think the party won't end. at. a quarter past six o'clock pm.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": ""
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "uh , let me think we will have a party .  at an afternoon and i think the party won't end .  at .  a quarter past 6 o'clock pm .",
+      "text_normalized": "uh, let me think we will have a party. at an afternoon and i think the party won't end. at. a quarter past six o'clock pm.",
+      "emotion": {
+        "label": 2,
+        "name": "dissatisfied"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay , got it . please hold on , let me check for you .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "okay, yes, thank you.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "okay , yes , thank you .",
+      "text_normalized": "okay, yes, thank you.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "yes , the restaurant are available on that time then i'm gonna need your name , please .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "uh, my name is joyce ten.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "uh , my name is joyce 10 .",
+      "text_normalized": "uh, my name is joyce ten.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "can you spell that i need take notes .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "yes, it's j. o.y. c. e and t e n d.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "yes , it's j . o.y . c . e and t e n d .",
+      "text_normalized": "yes, it's j. o.y. c. e and t e n d.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay , got it . would you like to receive all the information email .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "oh, well, i'm sorry, i don't want to give out my email address.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "oh , well , i'm sorry , i don't want to give out my email address .",
+      "text_normalized": "oh, well, i'm sorry, i don't want to give out my email address.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay , that's all . is there anything else i can do for you .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "no, on.",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      },
+      "text_original": "no , on .",
+      "text_normalized": "no, on.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      }
+    },
+    {
+      "role": "assistant",
+      "text": "okay , thanks for calling . have a nice day .",
+      "state": {
+        "attraction": {
+          "area": "",
+          "name": "",
+          "type": "",
+          "book_booked": []
+        },
+        "hospital": {
+          "department": "",
+          "book_booked": []
+        },
+        "hotel": {
+          "area": "",
+          "internet": "",
+          "name": "",
+          "parking": "",
+          "pricerange": "",
+          "stars": "",
+          "type": "",
+          "book_booked": [],
+          "book_day": "",
+          "book_people": "",
+          "book_stay": ""
+        },
+        "police": {
+          "book_booked": []
+        },
+        "profile": {
+          "email": "",
+          "idnumber": "",
+          "name": "joyce tenda",
+          "phonenumber": "",
+          "platenumber": "",
+          "book_booked": []
+        },
+        "restaurant": {
+          "area": "centre",
+          "food": "italian",
+          "name": "pizza hut city centre",
+          "pricerange": "cheap",
+          "book_booked": [],
+          "book_day": "friday",
+          "book_people": "5",
+          "book_time": "17:45"
+        },
+        "taxi": {
+          "arriveby": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": []
+        },
+        "train": {
+          "arriveby": "",
+          "day": "",
+          "departure": "",
+          "destination": "",
+          "leaveat": "",
+          "book_booked": [],
+          "book_people": ""
+        }
+      }
+    },
+    {
+      "role": "user",
+      "text": "<|endoftext|>",
+      "text_original": "<|endoftext|>",
+      "text_normalized": "<|endoftext|>"
+    }
+  ],
+  "state": {
+    "attraction": {
+      "area": "",
+      "name": "",
+      "type": "",
+      "book_booked": []
+    },
+    "hospital": {
+      "department": "",
+      "book_booked": []
+    },
+    "hotel": {
+      "area": "",
+      "internet": "",
+      "name": "",
+      "parking": "",
+      "pricerange": "",
+      "stars": "",
+      "type": "",
+      "book_booked": [],
+      "book_day": "",
+      "book_people": "",
+      "book_stay": ""
+    },
+    "police": {
+      "book_booked": []
+    },
+    "profile": {
+      "email": "",
+      "idnumber": "",
+      "name": "joyce tenda",
+      "phonenumber": "",
+      "platenumber": "",
+      "book_booked": []
+    },
+    "restaurant": {
+      "area": "centre",
+      "food": "italian",
+      "name": "pizza hut city centre",
+      "pricerange": "cheap",
+      "book_booked": [],
+      "book_day": "friday",
+      "book_people": "5",
+      "book_time": "17:45"
+    },
+    "taxi": {
+      "arriveby": "",
+      "departure": "",
+      "destination": "",
+      "leaveat": "",
+      "book_booked": []
+    },
+    "train": {
+      "arriveby": "",
+      "day": "",
+      "departure": "",
+      "destination": "",
+      "leaveat": "",
+      "book_booked": [],
+      "book_people": ""
+    }
+  },
+  "speaker": null,
+  "assistant_speaker": null,
+  "metadata": {
+    "has_native_crossturn": true,
+    "skip_augmentation": true,
+    "has_audio": true
+  }
+}

@@ -1,0 +1,39 @@
+You are a speech disfluency simulator. Your task is to add a self-correction to a user utterance in a task-oriented dialogue.
+
+**Context:**
+- Original Utterance: "{utterance}"
+- Slot to modify: {slot_name} = "{slot_value}"
+
+**Task:**
+Generate a realistic self-correction where the speaker first says a WRONG value for the slot, then corrects themselves. The correction should sound natural, as if the speaker momentarily misspoke or changed their mind.
+
+**Correction Patterns (use one):**
+1. "X- no, Y" (e.g., "Tuesday- no, Wednesday")
+2. "X- wait, I mean Y" (e.g., "San Jose- wait, I mean San Francisco")
+3. "X- actually, Y" (e.g., "2 people- actually, 4 people")
+4. "X... Y" (e.g., "7pm... 8pm")
+
+**Examples:**
+
+Example 1:
+- Original: "I need a train to Cambridge on Saturday."
+- Slot: day = "Saturday"
+- Output: "I need a train to Cambridge on Friday— no, Saturday."
+
+Example 2:
+- Original: "Book a table for 6 people please."
+- Slot: people = "6"
+- Output: "Book a table for 4 people— actually, 6 people please."
+
+Example 3:
+- Original: "I'm looking for a hotel in the north area."
+- Slot: area = "north"
+- Output: "I'm looking for a hotel in the south— wait, I mean north area."
+
+**Rules:**
+- The wrong value should be plausible (similar category: another day, city, time, etc.)
+- Keep the rest of the utterance EXACTLY the same
+- The final utterance MUST contain the correct value "{slot_value}"
+- Return ONLY the modified utterance, nothing else
+
+**Output:**

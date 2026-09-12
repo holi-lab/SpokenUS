@@ -1,0 +1,661 @@
+{
+  "dialogue_id": "emowoz_MUL2150",
+  "source": "emowoz",
+  "goal": {
+    "text": "You are planning your trip in Cambridge. You are looking for a place to stay. The hotel should be in the north and should have a star of 3. The hotel should be in the type of guesthouse. Once you find the hotel you want to book it for 4 people and 2 nights starting from monday. Make sure you get the reference number. You are also looking for a train. The train should go to cambridge and should be on the same day as the hotel booking. The train should depart from peterborough and should arrive by 20:45. Make sure you get price and train ID.",
+    "structured": {
+      "domains": [
+        "hotel",
+        "train"
+      ],
+      "intents": [
+        {
+          "domain": "hotel",
+          "intent": "find_and_book",
+          "slots": {
+            "type": "guesthouse",
+            "stars": "3",
+            "area": "north",
+            "book_stay": "2",
+            "book_day": "monday",
+            "book_invalid": false,
+            "book_people": "4"
+          },
+          "requests": []
+        },
+        {
+          "domain": "train",
+          "intent": "find",
+          "slots": {
+            "destination": "cambridge",
+            "day": "monday",
+            "arriveBy": "20:45",
+            "departure": "peterborough"
+          },
+          "requests": [
+            "price",
+            "trainID"
+          ]
+        }
+      ]
+    }
+  },
+  "turns": [
+    {
+      "role": "user",
+      "text": "Yes, I am looking for a place to stay. I would prefer, would prefer to stay in the North at a 3 Star location.",
+      "tagged": "Yes, I am looking for a place to stay. I would prefer [REP] would prefer to stay in the North at a three Star location.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [
+        {
+          "type": "REP",
+          "repeated_unit": "would prefer",
+          "position": 41
+        }
+      ],
+      "state": {
+        "hotel": {
+          "area": "North",
+          "stars": "3"
+        }
+      },
+      "text_original": "Yes, I am looking for a place to stay. I would prefer, would prefer to stay in the North at a 3 Star location.",
+      "text_normalized": "Yes, I am looking for a place to stay. I would prefer, would prefer to stay in the North at a three Star location.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_0.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "I show 2 option, both in the moderate price range. Do you need parking or internet?",
+      "state": {
+        "hotel": {
+          "area": "north",
+          "stars": "3"
+        }
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_1.wav"
+    },
+    {
+      "role": "user",
+      "text": "Neither of those matter, but I would like it to be a guesthouse, guesthouse.  Do one of those match?",
+      "tagged": "Neither of those matter, but I would like it to be a guesthouse [REP] guesthouse. Do one of those match?",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [
+        {
+          "type": "REP",
+          "repeated_unit": "guesthouse",
+          "position": 53
+        }
+      ],
+      "state": {
+        "hotel": {
+          "area": "north",
+          "stars": "3",
+          "type": "guesthouse"
+        }
+      },
+      "text_original": "Neither of those matter, but I would like it to be a guesthouse, guesthouse.  Do one of those match?",
+      "text_normalized": "Neither of those matter, but I would like it to be a guesthouse, guesthouse. Do one of those match?",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_2.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Alpha-Milton Guest House is 3 stars with no internet or parking. Would you like to book a room there?",
+      "state": {
+        "hotel": {
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse"
+        }
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_3.wav"
+    },
+    {
+      "role": "user",
+      "text": "I'd like to book it oh, for 4 people and 2 nights starting Monday. I need the reference number as well. ",
+      "tagged": "I'd like to book it [FP] oh, for four people and two nights starting Monday. I need the reference number as well.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [
+        {
+          "type": "FP",
+          "text": "oh, ",
+          "position": 20,
+          "filler_category": "filled_pause"
+        }
+      ],
+      "state": {
+        "hotel": {
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "stay": "2",
+          "day": "Monday",
+          "people": "4"
+        }
+      },
+      "text_original": "I'd like to book it oh, for 4 people and 2 nights starting Monday. I need the reference number as well. ",
+      "text_normalized": "I'd like to book it oh, for four people and two nights starting Monday. I need the reference number as well.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_4.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Fantastic, your reference number is T2AUGQ7S. Is there anything else you need today?",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        }
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_5.wav"
+    },
+    {
+      "role": "user",
+      "text": "Yes, I need a train to get me to Cambridge on Monday.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "dest": "Cambridge",
+          "day": "Monday"
+        }
+      },
+      "text_original": "Yes, I need a train to get me to Cambridge on Monday.",
+      "text_normalized": "Yes, I need a train to get me to Cambridge on Monday.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_6.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "There's a direct train from London King's Cross<bargein>",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "dest": "Cambridge",
+          "day": "Monday"
+        }
+      },
+      "bargein": {
+        "type": "CLARIFICATION",
+        "subtype": "FAIL_INTERP"
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_7.wav"
+    },
+    {
+      "role": "user",
+      "text": "Which one is the direct train from London King's Cross?",
+      "tagged": "Which one is the direct train from London King's Cross?",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [],
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "dest": "Cambridge",
+          "day": "Monday"
+        }
+      },
+      "bargein": {
+        "type": "CLARIFICATION",
+        "subtype": "FAIL_INTERP"
+      },
+      "text_original": "Which one is the direct train from London King's Cross?",
+      "text_normalized": "Which one is the direct train from London King's Cross?",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_8.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "The direct train from London King's Cross to Cambridge is the 08:45 service operated by Greater Anglia.",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "dest": "Cambridge",
+          "day": "Monday"
+        }
+      },
+      "bargein": {
+        "type": "CLARIFICATION",
+        "subtype": "FAIL_INTERP"
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_9.wav"
+    },
+    {
+      "role": "user",
+      "text": "I will be departing from peterborough, peterborough. ",
+      "tagged": "I will be departing from peterborough [REP] peterborough.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [
+        {
+          "type": "REP",
+          "repeated_unit": "peterborough",
+          "position": 25
+        }
+      ],
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "depart": "peterborough"
+        }
+      },
+      "text_original": "I will be departing from peterborough, peterborough. ",
+      "text_normalized": "I will be departing from peterborough, peterborough.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_10.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Okay, there are lots of choices. What time of day would you like to travel?",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "departure": "peterborough"
+        }
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_11.wav"
+    },
+    {
+      "role": "user",
+      "text": "I need to get there by twenty forty five.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "departure": "peterborough",
+          "arrive": "20:45"
+        }
+      },
+      "text_original": "I need to get there by 20:45.",
+      "text_normalized": "I need to get there by twenty forty five.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_12.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "TR7940 will get you there by 20:38, would you like me to book it you some tickets?",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_13.wav"
+    },
+    {
+      "role": "user",
+      "text": "No, I don't need assistance— let me just... Can you tell me the cost of the ticket though?",
+      "tagged": "No, I don't need assistance— let me just... [RST] Can you tell me the cost of the ticket though?",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "disfluency": [
+        {
+          "type": "RST",
+          "restart_near": 5,
+          "original_utterance": "No, I don't need assistance with the booking. Can you tell me the cost of the ticket though?",
+          "modified_utterance": "No, I don't need assistance— let me just... Can you tell me the cost of the ticket though?",
+          "position": 44
+        }
+      ],
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "text_original": "No, I don't need assistance— let me just... Can you tell me the cost of the ticket though?",
+      "text_normalized": "No, I don't need assistance— let me just... Can you tell me the cost of the ticket though?",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_14.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "The cost per ticket is 16.50 pounds. <bargein>",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "bargein": {
+        "type": "EFFICIENCY",
+        "subtype": "REF_RAW"
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_15.wav"
+    },
+    {
+      "role": "user",
+      "text": "Got it.",
+      "emotion": {
+        "label": 0,
+        "name": "neutral"
+      },
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "bargein": {
+        "type": "EFFICIENCY",
+        "subtype": "REF_RAW"
+      },
+      "text_original": "Got it.",
+      "text_normalized": "Got it.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_16.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "Can I assist you with anything else?",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "bargein": {
+        "type": "EFFICIENCY",
+        "subtype": "REF_RAW"
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_17.wav"
+    },
+    {
+      "role": "user",
+      "text": "No, that's everything. Thank you.",
+      "emotion": {
+        "label": 6,
+        "name": "satisfied"
+      },
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "text_original": "No, that's everything. Thank you.",
+      "text_normalized": "No, that's everything. Thank you.",
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_18.wav"
+    },
+    {
+      "role": "assistant",
+      "text": "You're welcome! I hope that you enjoy your stay in Cambridge.  Have a nice day.  Bye.",
+      "state": {
+        "hotel": {
+          "name": "alpha-milton guest house",
+          "area": "north",
+          "parking": "dontcare",
+          "stars": "3",
+          "internet": "dontcare",
+          "type": "guesthouse",
+          "book_reference": "T2AUGQ7S",
+          "book_name": "alpha-milton guest house",
+          "book_stay": "2",
+          "book_day": "monday",
+          "book_people": "4"
+        },
+        "train": {
+          "destination": "cambridge",
+          "day": "monday",
+          "arriveBy": "20:45",
+          "departure": "peterborough"
+        }
+      },
+      "audio_path": "data/audios/train/emowoz_MUL2150.json/turn_19.wav"
+    },
+    {
+      "role": "user",
+      "text": "<|endoftext|>",
+      "text_original": "<|endoftext|>",
+      "text_normalized": "<|endoftext|>"
+    }
+  ],
+  "state": {
+    "hotel": {
+      "name": "alpha-milton guest house",
+      "area": "north",
+      "parking": "dontcare",
+      "stars": "3",
+      "internet": "dontcare",
+      "type": "guesthouse",
+      "book_reference": "T2AUGQ7S",
+      "book_name": "alpha-milton guest house",
+      "book_stay": "2",
+      "book_day": "monday",
+      "book_people": "4"
+    },
+    "train": {
+      "destination": "cambridge",
+      "day": "monday",
+      "arriveBy": "20:45",
+      "departure": "peterborough"
+    }
+  },
+  "speaker": {
+    "filename": "english223.mp3",
+    "category": "Native",
+    "sex": "male",
+    "age": 18,
+    "country": "usa",
+    "native_language": "english",
+    "cohort": "10",
+    "target_demographic": {
+      "category": "Native",
+      "cohort": "10"
+    }
+  },
+  "assistant_speaker": {
+    "filename": "english11.mp3",
+    "sex": "female",
+    "country": "uk",
+    "category": "Native",
+    "cohort": "20-30"
+  },
+  "metadata": {}
+}

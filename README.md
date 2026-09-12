@@ -2,12 +2,24 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.16783-b31b1b.svg?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2603.16783)
 [![Project Page](https://img.shields.io/badge/Project-Page-4C8BF5.svg)](https://holi-lab.github.io/SpokenUS/)
-[![SpokenTOD](https://img.shields.io/badge/Code-SpokenTOD-181717.svg?logo=github)](https://github.com/holi-lab/SpokenTOD)
+[![SpokenTOD](https://img.shields.io/badge/Code-SpokenTOD-181717.svg?logo=github)](https://github.com/holi-lab/SpokenUS/tree/main/SpokenTOD)
 [![Dataset](https://img.shields.io/badge/Hugging_Face-SpokenTOD-FFD21E.svg)](https://huggingface.co/datasets/holi-lab/SpokenTOD)
 
-We introduce **SpokenTOD**, a spoken TOD dataset comprising 52,390 dialogues and 1,034 hours of speech, augmented with four spoken user behaviors—cross-turn slots, barge-in, disfluency, and emotional prosody. Explore the augmentation pipeline on [GitHub](https://github.com/holi-lab/SpokenTOD), and download the full dataset from [Hugging Face](https://huggingface.co/datasets/holi-lab/SpokenTOD).
+We introduce **SpokenTOD**, a spoken TOD dataset comprising 52,390 dialogues and 1,034 hours of speech, augmented with four spoken user behaviors—cross-turn slots, barge-in, disfluency, and emotional prosody. Explore the augmentation and synthesis pipeline in the [`SpokenTOD/`](SpokenTOD/) directory, and download the published dataset from [Hugging Face](https://huggingface.co/datasets/holi-lab/SpokenTOD).
 
 Building on SpokenTOD, we present **SpokenUS**, a spoken user simulator grounded in TOD with a dedicated architecture for barge-in.
+
+## Repository Structure
+
+- [`SpokenTOD/`](SpokenTOD/) contains the complete SpokenTOD data construction, augmentation, normalization, and speech synthesis code, together with its tests and release manifests.
+- [`docs/`](docs/) contains the SpokenUS project website.
+
+To set up the SpokenTOD pipeline from this repository:
+
+```bash
+cd SpokenTOD
+uv sync --extra normalization
+```
 
 ## Main Archiecture
 
