@@ -21,13 +21,6 @@ cd SpokenTOD
 uv sync --extra normalization
 ```
 
-## Main Archiecture
-
-SpokenUS takes the user’s goal and profile, the conversational history as interleaved text and speech tokens, and the current assistant speech, provided either as a complete utterance or as a streaming input. SpokenUS operates in three sequential modes: Listening Mode, which monitors incoming assistant speech to determine when to speak; Pre-scripting Mode, which generates a transcript before speech is produced; and Speaking Mode, which synthesizes the transcript into speech.
-
-![SpokenUS Archiecture](docs/static/images/SpokenUS.png)
-
-
 ## Citation
 
 ```bibtex
